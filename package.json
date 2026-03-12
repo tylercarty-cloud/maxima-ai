@@ -1,0 +1,24 @@
+{
+  "name": "zendesk_light_app",
+  "version": "1.0.0",
+  "description": "Private Zendesk Support app that sits in the **ticket sidebar**. Agents click **\"Draft AI Reply\"** to have an AI draft a reply from the ticket conversation; the draft is inserted into the reply composer for review and sending.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:kb": "node scripts/build-kb.mjs",
+    "zcli": "zcli",
+    "zcli:validate": "zcli apps:validate",
+    "zcli:package": "zcli apps:package",
+    "zcli:run": "zcli apps:run"
+  },
+  "devDependencies": {
+    "@langchain/core": "^1.1.30",
+    "@langchain/textsplitters": "^1.0.1",
+    "@zendesk/zcli": "latest",
+    "openai": "^6.25.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

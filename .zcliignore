@@ -1,0 +1,18 @@
+# ZCLI excludes these from the app zip (used by apps:validate and apps:package).
+# Only manifest.json and assets/ should be uploaded to Zendesk.
+# Use glob patterns; tmp/ is already ignored by default.
+
+node_modules
+node_modules/**
+.git
+.git/**
+*.log
+.env
+.env.*
+
+package.json
+package-lock.json
+README.md
+.zcliignore
+scripts
+scripts/**

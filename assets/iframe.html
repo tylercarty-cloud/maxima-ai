@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Reply Draft</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="app">
+    <button type="button" id="draft-btn" class="draft-btn" aria-busy="false">
+      <span class="btn-label">Draft AI Reply</span>
+      <span class="btn-loading" aria-hidden="true" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Generating...</span>
+      </span>
+    </button>
+
+    <button type="button" id="summary-btn" class="secondary-btn" aria-busy="false">
+      <span class="summary-label">Summarize Conversation</span>
+      <span class="summary-loading" aria-hidden="true" hidden>
+        <span class="spinner spinner--dark" aria-hidden="true"></span>
+        <span>Summarizing...</span>
+      </span>
+    </button>
+
+    <p id="error-msg" class="error-msg" role="alert" hidden></p>
+
+    <section id="summary-section" class="summary-section" aria-label="Conversation summary" hidden>
+      <h3 class="summary-title">Conversation summary</h3>
+      <div id="summary-content" class="summary-content"></div>
+    </section>
+
+    <section id="next-steps-section" class="next-steps-section" aria-label="Next steps for agent" hidden>
+      <h3 class="next-steps-title">Next steps for you</h3>
+      <div id="next-steps-content" class="next-steps-content"></div>
+    </section>
+  </div>
+  <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

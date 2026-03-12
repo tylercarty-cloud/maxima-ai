@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "AI Reply Draft",
+    "short_description": "Draft agent replies using AI.",
+    "long_description": "Drafts reply text from the ticket conversation using an external AI API. Agents review and send the draft."
+  },
+  "default": {
+    "draft_btn": "Draft AI Reply",
+    "generating": "Generating..."
+  }
+}
